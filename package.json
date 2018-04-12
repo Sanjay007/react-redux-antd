@@ -1,7 +1,7 @@
 {
   "name": "react-redux-antd",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": {
     "email": "sshrivatava@yodlee.com",
     "name": "Shreyans Shrivastava"

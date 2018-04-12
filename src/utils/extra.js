@@ -1,10 +1,6 @@
-export const getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+export const getRandomInt = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min)
 
-export const sleep = (time) => {
-    return new Promise((resolve) => setTimeout(resolve, time));
-}
+export const sleep = (time) => (new Promise((resolve) => setTimeout(resolve, time)))
 
 export const sortByField = (field) => {
     var reverse = false;

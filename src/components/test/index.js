@@ -1,23 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
-import { Layout, Button, Divider, Menu, Modal, Row, Col, Icon } from 'antd';
 import { TestActions } from '../../actions'
-import './index.css';
 
-class Home extends Component {
+class Home extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            testData: "This is a test data of the state"
-        }
+    state = {
+        testData: "This is a test data of the state"
     }
+    
     setTestDataOfState = (newData) => {
         this.setState({
             testData: newData
         })
     }
+
     render() {
         return (
             <React.Fragment>
@@ -30,7 +27,6 @@ class Home extends Component {
         );
     }
 }
-
 
 var mapStateToProps = (state) => {
     return {

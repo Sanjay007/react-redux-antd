@@ -1,4 +1,4 @@
-import { Modal, Button } from 'antd';
+import { Modal } from 'antd';
 
 export const info = (title, content, onOk) => {
     Modal.info({
@@ -22,14 +22,14 @@ export const error = (title, content) => {
     });
 }
 
-function warning(title, content) {
+export const warning = (title, content) => {
     Modal.warning({
         title: title,
         content: content,
     });
 }
 
-export function showConfirm(title, content, ok) {
+export const showConfirm = (title, content, ok) => {
     Modal.confirm({
         title: title,
         content: content,
@@ -42,7 +42,7 @@ export function showConfirm(title, content, ok) {
     });
 }
 
-export function showDeleteConfirm(title, content) {
+export const showDeleteConfirm = (title, content) => {
     Modal.confirm({
         title: title,
         content: content,
